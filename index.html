@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحليل العملات الرقمية</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 محلل العملات الرقمية</h1>
+            <div class="controls">
+                <button id="toggleScan" class="btn primary">▶️ بدء البحث</button>
+                <div class="sound-control">
+                    <label class="switch">
+                        <input type="checkbox" id="soundToggle">
+                        <span class="slider"></span>
+                    </label>
+                    <span>🔔 تنبيه صوتي</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="table-container">
+            <table id="resultsTable">
+                <thead>
+                    <tr>
+                        <th data-sort="symbol">العملة 📊</th>
+                        <th data-sort="price">السعر الحالي 💰</th>
+                        <th data-sort="timeframe">الإطار الزمني ⏱</th>
+                        <th data-sort="volume">حجم التداول 📈</th>
+                        <th data-sort="trend">الاتجاه 🎯</th>
+                        <th data-sort="targets">الأهداف المتوقعة 🎯</th>
+                        <th data-sort="stopLoss">وقف الخسارة 🛑</th>
+                        <th data-sort="timestamp">وقت الإشارة ⏰</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024 خالد دراغة</p>
+        <p>للتواصل: gsmkhaledtiaret@gmail.com</p>
+    </footer>
+
+    <audio id="notificationSound" src="data:audio/mpeg;base64,SUQzBAAAAAAAI1RTU0UAAAAPAAADTGF2ZjU4LjI5LjEwMAAAAAAAAAAAAAAA//OEAAAAAAAAAAAAAAAAAAAAAAAASW5mbwAAAA8AAAAUAAAbAAYGBgYGBgYGDQ0NDQ0NDQ0UFBQUFBQUFBsbGxsbGxsbIiIiIiIiIiIpKSkpKSkpKTAwMDAwMDAwNzc3Nzc3Nzc+Pj4+Pj4+Pj8/Pz8/Pz8/AAAA//MUZAAAAAGkAAAAAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV//MUZCMAAAGkAAAAAAAAA0gAAAAA"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
